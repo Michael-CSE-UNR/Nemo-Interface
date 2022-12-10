@@ -40,23 +40,23 @@ p.ParaOverride-1 {
 	text-align:justify;
 	text-align-last:center;
 }
-span.CharOverride-1 {
+/* span.CharOverride-1 {
 	font-size:30px;
-}
-span.CharOverride-2 {
+} */
+/* span.CharOverride-2 {
 	color:#ffffff;
-}
-span.CharOverride-3 {
+} */
+/* span.CharOverride-3 {
 	color:#666666;
 	font-size:20px;
-}
-#_idContainer000 {
+} */
+/* #_idContainer000 {
 	display:inline-block;
 	height:50px;
 	position:relative;
 	width:810px;
-}
-#_idContainer002 {
+} */
+/* #_idContainer002 {
 	display:inline-block;
 	height:336px;
 	width:754px;
@@ -66,14 +66,14 @@ span.CharOverride-3 {
 	height:221px;
 	position:relative;
 	width:615px;
-}
-div._idGenObjectStyleOverride-1 {
+} */
+/* div._idGenObjectStyleOverride-1 {
 	background-color:#adcdec;
 	border-width:0px;
 }
 div._idGenObjectStyleOverride-2 {
 	border-width:0px;
-}
+} */
 div._idGenObjectStyleOverride-3 {
 	background-color:#ededed;
 	border-style:dashed;
@@ -135,8 +135,6 @@ p.NemoHomeDropFilesHereTxt {
 	border-width: 2px;
 	margin-left: 30px;
 	margin-right: 30px;
-	/* height: 90%;
-	height:calc(100%-10px); */
 	height: 500px;
 }
 
