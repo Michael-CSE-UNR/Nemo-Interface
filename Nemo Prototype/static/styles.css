@@ -1,7 +1,7 @@
 body {
 	height: 100%;
 	background-image: url("BackgroundImage2.jpg");
-	
+
 }
 div.Basic-Graphics-Frame {
 	border-color:#000000;
@@ -28,6 +28,7 @@ div._idGenObjectLayout-1 {
 	text-align:center;
 }
 .NEMOHomeButton {
+	transition-duration: 0.3s;
 	background-color: #adcdec;
 	border: none;
 	font-size: 3vw;
@@ -36,10 +37,15 @@ div._idGenObjectLayout-1 {
 	cursor: pointer;
 	text-align: center;
 }
+.NEMOHomeButton:hover {
+  background-color: #95B0CC;
+  color: white;
+}
 div.homeTopButtonsContainer {
 	text-align: right;
 }
 .NEMOHomeButtonsTop {
+	transition-duration: 0.3s;
 	background-color: #adcdec;
 	border: none;
 	font-size: 1.8vw;
@@ -47,6 +53,10 @@ div.homeTopButtonsContainer {
 	margin-right: 1%;
 	cursor: pointer;
 	text-align: center;
+}
+.NEMOHomeButtonsTop:hover {
+  background-color: #95B0CC;
+  color: white;
 }
 
 div.homePadding {
@@ -56,7 +66,7 @@ div.homePadding {
 	margin-right: 30px;
 	margin-bottom: 50px;
 	margin-left: 80px;
-	
+
 }
 div.ContributePadding {
 	border: 1px solid black;
@@ -112,18 +122,18 @@ p.NemoHomeDropFilesHereContribute {
 	padding-top: 12%;
 	padding-bottom: 12%;
 }
-#DorpFileBoxContainer {
+#DropFileBoxContainer {
 	background-color:#ededed;
-	border-style:dashed;
+	border-style: dashed;
 	border-width: 2px;
 	margin-left: 10%;
 	margin-right: 10%;
-	margin-bottom: 1%;
+	margin-bottom: 10%;
 	/* height: 100%; */
 }
 
-
 .homeFourButtonsBottom {
+	transition-duration: 0.3s;
 	width: 14vw;
 	background-color: #adcdec;
 	border: none;
@@ -135,5 +145,8 @@ p.NemoHomeDropFilesHereContribute {
 	cursor: pointer;
 	margin-left: 2vw;
 	margin-right: 2vw;
-
+}
+.homeFourButtonsBottom:hover {
+  background-color: #95B0CC;
+  color: black;
 }
