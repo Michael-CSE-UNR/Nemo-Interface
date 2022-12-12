@@ -30,7 +30,23 @@ function showImageUploadedContribute(src, width, height, alt)
     img.width = width;
     img.height = height;
     img.alt = alt;
+	img.id = alt;
 
     // This next line will just add it to the <body> tag
     document.getElementById('dropzoneContribute').appendChild(img);
+}
+function removeImagesContribute()
+{
+	while(document.getElementById('0ImageUpload') != null ||
+	document.getElementById('1ImageUpload') != null ||
+	document.getElementById('2ImageUpload') != null ||
+	document.getElementById('3ImageUpload'))
+	{
+		document.getElementById('0ImageUpload').remove()
+		document.getElementById('1ImageUpload').remove()
+		document.getElementById('2ImageUpload').remove()
+		document.getElementById('3ImageUpload').remove()
+	}
+
+	uploadIndex=0
 }
