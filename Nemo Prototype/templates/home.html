@@ -33,9 +33,19 @@
 	</div>
 	<!-- The bottom four options/buttons of Upload files, clear, run nemo, run example -->
 	<div class="_idGenObjectLayout-1">
-		<button class="homeFourButtonsBottom">Upload Files</button>
 		<button class="homeFourButtonsBottom" onclick="removeImagesHome()">Clear</button>
-		<button class="homeFourButtonsBottom">Run Nemo</button>
+		<button class="homeFourButtonsBottom" onclick="runNemo()">Run Nemo</button>
 		<button class="homeFourButtonsBottom">Run Example</button>
 	</div>
+
+	<div id="resultModal" class="modalResult">
+
+		<!-- Modal content -->
+		<div class="modal-contentResult" id="resultsImgArea">
+		  <span class="closeModalResult">&times;</span>
+		  <p class="ResultsHeader">Results</p>
+		</div>
+	  
+	  </div>
+
 {% endblock %}

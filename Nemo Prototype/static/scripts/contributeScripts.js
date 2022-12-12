@@ -3,27 +3,29 @@ const dropZoneContribute = document.querySelector('#dropzoneContribute');
 dropZoneContribute.addEventListener('dragover', (e)=> {
 	e.preventDefault();
 })
-var uploadIndex=0
+var uploadIndexContribute=0
+var totalUploadsContribute=0
 dropZoneContribute.addEventListener('drop', (e)=> {
 	e.preventDefault();
 	console.log(e.dataTransfer.files);
 	for (let file of e.dataTransfer.files) {
 		if (file.type=='image/jpeg')
 		{
-			if(uploadIndex>3)
+			if(uploadIndexContribute>3)
 			{
-				uploadIndex=0
+				uploadIndexContribute=0
 			}
-			src = '/static/NemoExample' + String(uploadIndex) + '.jpg';
-			fileName=String(uploadIndex) + 'ImageUpload';
-			showImageUploadedContribute(src, 200, 200, fileName)
+			src = '/static/NemoExample' + String(uploadIndexContribute) + '.jpg';
+			fileName=String(uploadIndexContribute) + 'ImageUpload';
+			showImageUploadedHome(src, 200, 200, fileName, 'dropzoneContribute')
 			// console.log(e.dataTransfer.files);
 			// upload(file)
 		}
-		uploadIndex=uploadIndex+1;
+		uploadIndexContribute=uploadIndexContribute+1;
+		totalUploadsContribute=totalUploadsContribute+1;
 	}
 })
-function showImageUploadedContribute(src, width, height, alt)
+function showImageUploadedHome(src, width, height, alt, locID)
 {
 	var img = document.createElement("img");
     img.src = src;
@@ -33,7 +35,7 @@ function showImageUploadedContribute(src, width, height, alt)
 	img.id = alt;
 
     // This next line will just add it to the <body> tag
-    document.getElementById('dropzoneContribute').appendChild(img);
+    document.getElementById(locID).appendChild(img);
 }
 function removeImagesContribute()
 {
@@ -42,11 +44,94 @@ function removeImagesContribute()
 	document.getElementById('2ImageUpload') != null ||
 	document.getElementById('3ImageUpload'))
 	{
-		document.getElementById('0ImageUpload').remove()
-		document.getElementById('1ImageUpload').remove()
-		document.getElementById('2ImageUpload').remove()
-		document.getElementById('3ImageUpload').remove()
+		if (document.getElementById('0ImageUpload') != null)
+		{
+			document.getElementById('0ImageUpload').remove();
+		}
+		if (document.getElementById('1ImageUpload') != null)
+		{
+			document.getElementById('1ImageUpload').remove();
+		}
+		if (document.getElementById('2ImageUpload') != null)
+		{
+			document.getElementById('2ImageUpload').remove();
+		}
+		if (document.getElementById('3ImageUpload') != null)
+		{
+			document.getElementById('3ImageUpload').remove();
+		}
 	}
 
-	uploadIndex=0
+	uploadIndexContribute=0;
+	totalUploadsContribute=0;
+}
+
+// Get the modal
+var contributeModal = document.getElementById("contributeModal");
+
+// Get the <span> element that closes the modal
+var spanContribute = document.getElementsByClassName("closeModalContribute")[0];
+
+// When the user clicks on the button, open the modal
+function submitContribute(){
+	uploadsLeft=totalUploadsContribute;
+	if(document.getElementById('0ImageUpload') != null ||
+	document.getElementById('1ImageUpload') != null ||
+	document.getElementById('2ImageUpload') != null ||
+	document.getElementById('3ImageUpload'))
+	{
+		while(document.getElementById('0ImageUploadContribute') != null ||
+		document.getElementById('1ImageUploadContribute') != null ||
+		document.getElementById('2ImageUploadContribute') != null ||
+		document.getElementById('3ImageUploadContribute'))
+		{
+			if (document.getElementById('0ImageUploadContribute') != null)
+			{
+				document.getElementById('0ImageUploadContribute').remove();
+			}
+			if (document.getElementById('1ImageUploadContribute') != null)
+			{
+				document.getElementById('1ImageUploadContribute').remove();
+			}
+			if (document.getElementById('2ImageUploadContribute') != null)
+			{
+				document.getElementById('2ImageUploadContribute').remove();
+			}
+			if (document.getElementById('3ImageUploadContribute') != null)
+			{
+				document.getElementById('3ImageUploadContribute').remove();
+			}
+		}
+		contributeModal.style.display = "block";
+
+		while(uploadsLeft>0)
+		{
+			if (document.getElementById('0ImageUpload') != null)
+			{
+				showImageUploadedHome('/static/NemoExample0.jpg', 200, 200, '0ImageUploadContribute', 'contributesImgArea')
+				uploadsLeft=uploadsLeft-1;
+			}
+			if (document.getElementById('1ImageUpload') != null)
+			{
+				showImageUploadedHome('/static/NemoExample1.jpg', 200, 200, '1ImageUploadContribute', 'contributesImgArea')
+				uploadsLeft=uploadsLeft-1;
+			}
+			if (document.getElementById('2ImageUpload') != null)
+			{
+				showImageUploadedHome('/static/NemoExample2.jpg', 200, 200, '2ImageUploadContribute', 'contributesImgArea')
+				uploadsLeft=uploadsLeft-1;
+			}
+			if (document.getElementById('3ImageUpload') != null)
+			{
+				showImageUploadedHome('/static/NemoExample3.jpg', 200, 200, '3ImageUploadContribute', 'contributesImgArea')
+				uploadsLeft=uploadsLeft-1;
+			}
+			
+		}
+	}
+}
+
+// When the user clicks on <span> (x), close the modal
+spanContribute.onclick = function() {
+	contributeModal.style.display = "none";
 }
