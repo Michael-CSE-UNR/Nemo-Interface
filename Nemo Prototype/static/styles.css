@@ -122,14 +122,23 @@ p.NemoHomeDropFilesHereContribute {
 	padding-top: 12%;
 	padding-bottom: 12%;
 }
-#DropFileBoxContainer {
+.DropFileBoxContainer {
 	background-color:#ededed;
 	border-style: dashed;
 	border-width: 2px;
 	margin-left: 10%;
 	margin-right: 10%;
-	margin-bottom: 10%;
+	margin-bottom: 1%;
+
 	/* height: 100%; */
+}
+
+.DropZoneImages {
+	text-align: center;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	margin-bottom: 1vw;
+
 }
 
 .homeFourButtonsBottom {

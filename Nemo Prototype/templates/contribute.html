@@ -12,9 +12,9 @@
 	<!-- THe top row of buttons, NEMO, How To Use, Contribute -->
 
 	<div class="Basic-Text-Frame _idGenObjectStyleOverride-4">
-		<a href="/"><button class="NEMOHomeButton">NEMO</button></a>
-		<a href="HowTo" ><button class="NEMOHomeButtonsTop">How To Use</button></a>
-		<a href="Contribute" ><button class="NEMOHomeButtonsTop">Contribute</button></a>
+		<button class="NEMOHomeButton" onclick="NEMOHomeButton()">NEMO</button>
+		<button class="NEMOHomeButtonsTop" onclick="NEMOHowToButton()">How To Use</button>
+		<button class="NEMOHomeButtonsTop" onclick="NEMOContributeButton()">Contribute</button>
 	</div>
 	<div class="ContributePadding">
 		<p class="ContributeTxt">Contribute</p>
@@ -29,8 +29,10 @@
 		also uses bipartite matching loss function.</p>
 	</div>
 	<!-- Drop file box -->
-	<div id="DropFileBoxContainer">
-		<p class="NemoHomeDropFilesHereContribute" lang="en-US"><span class="CharOverride-3" lang="">Drop Files Here</span></p>
+	<div class="DropFileBoxContainer">
+		<div id="dropzoneContribute" class="DropZoneImages">
+			<p class="NemoHomeDropFilesHereContribute" lang="en-US"><span class="CharOverride-3" lang="">Drop Files Here</span></p>
+		</div>
 	</div>
 	<!-- The bottom four options/buttons of Upload files, clear, run nemo, run example -->
 	<div class="_idGenObjectLayout-1">
