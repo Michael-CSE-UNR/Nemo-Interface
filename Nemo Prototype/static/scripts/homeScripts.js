@@ -133,4 +133,29 @@ function runNemo(){
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
 	resultModal.style.display = "none";
+	if (document.getElementById('0ImageUploadExample') != null)
+	{
+		document.getElementById('0ImageUploadExample').remove();
+	}
+	if (document.getElementById('1ImageUploadExample') != null)
+	{
+		document.getElementById('1ImageUploadExample').remove();
+	}
+	if (document.getElementById('2ImageUploadExample') != null)
+	{
+		document.getElementById('2ImageUploadExample').remove();
+	}
+	if (document.getElementById('3ImageUploadExample') != null)
+	{
+		document.getElementById('3ImageUploadExample').remove();
+	}
+}
+function runExample(){
+	removeImagesHome();
+	resultModal.style.display = "block";
+	showImageUploadedHome('/static/NemoExample0.jpg', 200, 200, '0ImageUploadExample', 'resultsImgArea')
+	showImageUploadedHome('/static/NemoExample1.jpg', 200, 200, '1ImageUploadExample', 'resultsImgArea')
+	showImageUploadedHome('/static/NemoExample2.jpg', 200, 200, '2ImageUploadExample', 'resultsImgArea')
+	showImageUploadedHome('/static/NemoExample3.jpg', 200, 200, '3ImageUploadExample', 'resultsImgArea')
+	
 }
