@@ -27,6 +27,12 @@
             working model. If you have images with pre-labeled data, please submit them below:
         </p>
 	</div>
+
+	<div class="_idGenObjectLayout-1">
+		<button class="ContributeLinkButtons" onclick="NEMORepositoryButton()">Github Repository for Nemo</button>
+		<button class="ContributeLinkButtons" onclick="NEMOPaperButton()">Research Paper for Nemo</button>
+	</div>
+
 	<!-- Drop file box -->
 	<div class="DropFileBoxContainer">
 		<div id="dropzoneContribute" class="DropZoneImages">
@@ -42,9 +48,12 @@
 	<div id="contributeModal" class="modalContribute">
 
 		<!-- Modal content -->
-		<div class="modal-contentContribute" id="contributesImgArea">
+		<div class="modal-contentContribute">
 		  <span class="closeModalContribute">&times;</span>
 		  <p class="ContributesHeader">Thank You for Your Contribution</p>
+		  <div class="fileUploadFormat" id="contributesImgArea">
+
+		  </div>
 		</div>
 	  
 	  </div>
