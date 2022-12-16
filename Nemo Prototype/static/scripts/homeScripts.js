@@ -17,7 +17,7 @@ dropZoneHome.addEventListener('drop', (e)=> {
 			}
 			src = '/static/NemoExample' + String(uploadIndex) + '.jpg';
 			fileName=String(uploadIndex) + 'ImageUpload';
-			showImageUploadedHome(src, 600, 300, fileName, 'dropzoneHome')
+			showImageUploadedHome(src, 800, 300, fileName, 'dropzoneHome')
 			// console.log(e.dataTransfer.files);
 			// upload(file)
 			uploadIndex=uploadIndex+1;
@@ -103,27 +103,27 @@ function runNemo(){
 			}
 		}
 		resultModal.style.display = "block";
-		showImageUploadedHome('/static/NemoExampleResults.jpg', 600, 600, '0ImageUploadResult', 'resultsImgArea')
+		showImageUploadedHome('/static/NemoExampleResults.jpg', 800, 600, '0ImageUploadResult', 'resultsImgArea')
 		while(uploadsLeft>0)
 		{
 			if (document.getElementById('0ImageUpload') != null)
 			{
-				showImageUploadedHome('/static/NemoExample0.jpg', 600, 300, '0ImageUploadResult', 'resultsImgArea')
+				showImageUploadedHome('/static/NemoExample0.jpg', 800, 300, '0ImageUploadResult', 'resultsImgArea')
 				uploadsLeft=uploadsLeft-1;
 			}
 			if (document.getElementById('1ImageUpload') != null)
 			{
-				showImageUploadedHome('/static/NemoExample1.jpg', 600, 300, '1ImageUploadResult', 'resultsImgArea')
+				showImageUploadedHome('/static/NemoExample1.jpg', 800, 300, '1ImageUploadResult', 'resultsImgArea')
 				uploadsLeft=uploadsLeft-1;
 			}
 			if (document.getElementById('2ImageUpload') != null)
 			{
-				showImageUploadedHome('/static/NemoExample2.jpg', 600, 300, '2ImageUploadResult', 'resultsImgArea')
+				showImageUploadedHome('/static/NemoExample2.jpg', 800, 300, '2ImageUploadResult', 'resultsImgArea')
 				uploadsLeft=uploadsLeft-1;
 			}
 			if (document.getElementById('3ImageUpload') != null)
 			{
-				showImageUploadedHome('/static/NemoExample3.jpg', 600, 300, '3ImageUploadResult', 'resultsImgArea')
+				showImageUploadedHome('/static/NemoExample3.jpg', 800, 300, '3ImageUploadResult', 'resultsImgArea')
 				uploadsLeft=uploadsLeft-1;
 			}
 			
@@ -158,10 +158,10 @@ span.onclick = function() {
 function runExample(){
 	removeImagesHome();
 	resultModal.style.display = "block";
-	showImageUploadedHome('/static/NemoExampleResults.jpg', 600, 600, '0ImageUploadExample', 'resultsImgArea')
-	showImageUploadedHome('/static/NemoExample0.jpg', 600, 300, '0ImageUploadExample', 'resultsImgArea')
-	showImageUploadedHome('/static/NemoExample1.jpg', 600, 300, '1ImageUploadExample', 'resultsImgArea')
-	showImageUploadedHome('/static/NemoExample2.jpg', 600, 300, '2ImageUploadExample', 'resultsImgArea')
-	showImageUploadedHome('/static/NemoExample3.jpg', 600, 300, '3ImageUploadExample', 'resultsImgArea')
+	showImageUploadedHome('/static/NemoExampleResults.jpg', 800, 600, '0ImageUploadExample', 'resultsImgArea')
+	showImageUploadedHome('/static/NemoExample0.jpg', 800, 300, '0ImageUploadExample', 'resultsImgArea')
+	showImageUploadedHome('/static/NemoExample1.jpg', 800, 300, '1ImageUploadExample', 'resultsImgArea')
+	showImageUploadedHome('/static/NemoExample2.jpg', 800, 300, '2ImageUploadExample', 'resultsImgArea')
+	showImageUploadedHome('/static/NemoExample3.jpg', 800, 300, '3ImageUploadExample', 'resultsImgArea')
 	
 }

@@ -17,7 +17,7 @@ dropZoneContribute.addEventListener('drop', (e)=> {
 			}
 			src = '/static/NemoExample' + String(uploadIndexContribute) + '.jpg';
 			fileName=String(uploadIndexContribute) + 'ImageUpload';
-			showImageUploadedHome(src, 600, 300, fileName, 'dropzoneContribute')
+			showImageUploadedHome(src, 800, 300, fileName, 'dropzoneContribute')
 			// console.log(e.dataTransfer.files);
 			// upload(file)
 		}
@@ -108,22 +108,22 @@ function submitContribute(){
 		{
 			if (document.getElementById('0ImageUpload') != null)
 			{
-				showImageUploadedHome('/static/NemoExample0.jpg', 600, 300, '0ImageUploadContribute', 'contributesImgArea')
+				showImageUploadedHome('/static/NemoExample0.jpg', 800, 300, '0ImageUploadContribute', 'contributesImgArea')
 				uploadsLeft=uploadsLeft-1;
 			}
 			if (document.getElementById('1ImageUpload') != null)
 			{
-				showImageUploadedHome('/static/NemoExample1.jpg', 600, 300, '1ImageUploadContribute', 'contributesImgArea')
+				showImageUploadedHome('/static/NemoExample1.jpg', 800, 300, '1ImageUploadContribute', 'contributesImgArea')
 				uploadsLeft=uploadsLeft-1;
 			}
 			if (document.getElementById('2ImageUpload') != null)
 			{
-				showImageUploadedHome('/static/NemoExample2.jpg', 600, 300, '2ImageUploadContribute', 'contributesImgArea')
+				showImageUploadedHome('/static/NemoExample2.jpg', 800, 300, '2ImageUploadContribute', 'contributesImgArea')
 				uploadsLeft=uploadsLeft-1;
 			}
 			if (document.getElementById('3ImageUpload') != null)
 			{
-				showImageUploadedHome('/static/NemoExample3.jpg', 600, 300, '3ImageUploadContribute', 'contributesImgArea')
+				showImageUploadedHome('/static/NemoExample3.jpg', 800, 300, '3ImageUploadContribute', 'contributesImgArea')
 				uploadsLeft=uploadsLeft-1;
 			}
 			

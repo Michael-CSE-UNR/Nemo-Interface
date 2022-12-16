@@ -178,7 +178,7 @@ p.NemoHomeDropFilesHereContribute {
   /* Modal Content/Box */
   .modal-contentResult {
 	background-color: #fefefe;
-	margin: 15% auto; /* 15% from the top and centered */
+	margin: 5% auto; /* 15% from the top and centered */
 	padding: 20px;
 	border: 1px solid #888;
 	width: 90%; /* Could be more or less, depending on screen size */
@@ -229,7 +229,7 @@ p.NemoHomeDropFilesHereContribute {
   /* Modal Content/Box */
   .modal-contentContribute {
 	background-color: #fefefe;
-	margin: 15% auto; /* 15% from the top and centered */
+	margin: 5% auto; /* 15% from the top and centered */
 	padding: 20px;
 	border: 1px solid #888;
 	width: 90%; /* Could be more or less, depending on screen size */
