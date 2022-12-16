@@ -74,60 +74,12 @@ var spanContribute = document.getElementsByClassName("closeModalContribute")[0];
 
 // When the user clicks on the button, open the modal
 function submitContribute(){
-	uploadsLeft=totalUploadsContribute;
 	if(document.getElementById('0ImageUpload') != null ||
 	document.getElementById('1ImageUpload') != null ||
 	document.getElementById('2ImageUpload') != null ||
 	document.getElementById('3ImageUpload'))
 	{
-		while(document.getElementById('0ImageUploadContribute') != null ||
-		document.getElementById('1ImageUploadContribute') != null ||
-		document.getElementById('2ImageUploadContribute') != null ||
-		document.getElementById('3ImageUploadContribute'))
-		{
-			if (document.getElementById('0ImageUploadContribute') != null)
-			{
-				document.getElementById('0ImageUploadContribute').remove();
-			}
-			if (document.getElementById('1ImageUploadContribute') != null)
-			{
-				document.getElementById('1ImageUploadContribute').remove();
-			}
-			if (document.getElementById('2ImageUploadContribute') != null)
-			{
-				document.getElementById('2ImageUploadContribute').remove();
-			}
-			if (document.getElementById('3ImageUploadContribute') != null)
-			{
-				document.getElementById('3ImageUploadContribute').remove();
-			}
-		}
 		contributeModal.style.display = "block";
-
-		while(uploadsLeft>0)
-		{
-			if (document.getElementById('0ImageUpload') != null)
-			{
-				showImageUploadedHome('/static/NemoExample0.jpg', 800, 300, '0ImageUploadContribute', 'contributesImgArea')
-				uploadsLeft=uploadsLeft-1;
-			}
-			if (document.getElementById('1ImageUpload') != null)
-			{
-				showImageUploadedHome('/static/NemoExample1.jpg', 800, 300, '1ImageUploadContribute', 'contributesImgArea')
-				uploadsLeft=uploadsLeft-1;
-			}
-			if (document.getElementById('2ImageUpload') != null)
-			{
-				showImageUploadedHome('/static/NemoExample2.jpg', 800, 300, '2ImageUploadContribute', 'contributesImgArea')
-				uploadsLeft=uploadsLeft-1;
-			}
-			if (document.getElementById('3ImageUpload') != null)
-			{
-				showImageUploadedHome('/static/NemoExample3.jpg', 800, 300, '3ImageUploadContribute', 'contributesImgArea')
-				uploadsLeft=uploadsLeft-1;
-			}
-			
-		}
 	}
 }
 
