@@ -2,7 +2,7 @@
 
 <template>
   <div class="container">
-    <div class="hello">Vue Dropzone</div>
+<!--    <div class="hello">Vue Dropzone</div>-->
     <vue-dropzone
       ref="myVueDropzone"
       :include-styling="false"

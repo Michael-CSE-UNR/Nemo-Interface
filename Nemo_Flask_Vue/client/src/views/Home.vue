@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <section class="bg-light">
+    <section class="masthead">
       <div class="container px-5">
         <div class="row gx-5 align-items-center">
           <h1 class="display-1 lh-1 mb-3">Wildfire Smoke Detection</h1>
@@ -16,16 +16,19 @@
             function.</p>
         </div>
       </div>
+      <Attachment />
     </section>
-    <Attachment /></div>
+    <References /></div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Attachment from '@/components/Attachment.vue'
+import References from '@/components/References.vue'
 export default {
   name: 'Home',
   components: {
+    References,
     Attachment
   }
 }
