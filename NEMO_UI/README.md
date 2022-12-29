@@ -1,5 +1,7 @@
 # NEMO_UI
 
+Main web application design for senior projects.
+
 ## Frontend
 
 ### Recommended IDE Setup
@@ -13,18 +15,21 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 ### Project Setup
 
 ```sh
+cd client
 npm install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
+cd client
 npm run dev
 ```
 
 ### Compile and Minify for Production
 
 ```sh
+cd client
 npm run build
 ```
 
