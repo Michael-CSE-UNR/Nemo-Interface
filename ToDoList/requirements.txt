@@ -1,8 +1,0 @@
-Python 				v3.10.6				---python3 --version
-
-python-dotenv 		v0.21.0				---pip install python-dotenv
-
-Flask  				v2.2.2				---pip install Flask
-flask-sqlalchemy 	v3.0.2				---pip install flask-sqlalchemy
-
-wtforms 			v3.0.1				---pip install wtforms
