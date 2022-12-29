@@ -1,6 +1,6 @@
-# test_nemo
+# NEMO_UI
 
-This template should help get you started developing with Vue 3 in Vite.
+User interface with NEMO using Vue3 and Vite.
 
 ## Recommended IDE Setup
 
