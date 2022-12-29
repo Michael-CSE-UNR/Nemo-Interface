@@ -1,7 +1,5 @@
 # NEMO_UI
 
-User interface with NEMO using Vue3 and Vite.
-
 ## Frontend
 
 ### Recommended IDE Setup
@@ -29,3 +27,7 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Backend
+
+Work in progress
