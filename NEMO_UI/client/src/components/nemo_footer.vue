@@ -4,13 +4,13 @@
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item">
         <a href="https://github.com/SayBender/Nemo" target="_blank">
-          <img src="public/github.svg" class="icon_custom" alt=""/>
+          <img src="/github.svg" class="icon_custom" alt=""/>
         </a>
       </li>
 
       <li class="nav-item">
         <a href="https://www.mdpi.com/2072-4292/14/16/3979" target="_blank">
-          <img src="public/publication.png" class="icon_custom" alt=""/>
+          <img src="/publication.png" class="icon_custom" alt=""/>
         </a>
       </li>
     </ul>
@@ -27,8 +27,8 @@ export default {
 
 <style scoped>
 .icon_custom {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin-left: 1rem;
 }
 </style>
