@@ -1,7 +1,4 @@
 <template>
-  <div class="HowToUse">
-
-  </div>
 </template>
 
 <script>

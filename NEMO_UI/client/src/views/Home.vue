@@ -1,14 +1,14 @@
 <template>
   <div class="Home">
+    <About />
   </div>
 </template>
 
 <script>
+import About from "@/components/About.vue";
+
 export default {
-  name: "Home"
+  name: "Home",
+  components: {About}
 }
 </script>
-
-<style scoped>
-
-</style>

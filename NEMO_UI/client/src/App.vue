@@ -1,38 +1,10 @@
 <script setup>
-// Imports
-import MenuBar from "@/components/MenuBar.vue";
+import MenuBar from './components/MenuBar.vue'
+import Footer from './components/nemo_footer.vue'
 </script>
 
 <template>
   <MenuBar />
   <router-view></router-view>
+  <Footer />
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
