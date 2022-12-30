@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm" id="mainNav">
     <div class="container px-5">
         <router-link class="navbar-brand fw-bold" to="/">NEMO</router-link>
         <button class="navbar-toggler"
@@ -21,13 +21,6 @@
               <router-link class="nav-link me-lg-3" to="/contribute">Contribute</router-link>
             </li>
           </ul>
-<!--        <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"-->
-<!--                data-bs-target="#feedbackModal">-->
-<!--                        <span class="d-flex align-items-center">-->
-<!--                            <i class="bi-chat-text-fill me-2"></i>-->
-<!--                            <span class="small">Contribute</span>-->
-<!--                        </span>-->
-<!--        </button>-->
       </div>
     </div>
   </nav>
