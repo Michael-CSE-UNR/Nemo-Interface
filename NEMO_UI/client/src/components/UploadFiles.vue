@@ -7,65 +7,56 @@
       <div class="file-drop-area">
         <span class="choose-file-button">Choose files</span>
         <span class="file-message">or drag and drop files here</span>
-        <input class="file-input" multiple type="file">
+        <input class="file-input" multiple type="file" @change="handleFileUpload( $event )">
       </div>
+      <br>
+      <button v-on:click="submitFiles()">Submit</button>
     </div>
   </div>
 
 </template>
 
-<style scoped>
-
-
-.file-drop-area {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 450px;
-  max-width: 100%;
-  padding: 25px;
-  border: 1px dashed black;
-  background-color: lightgray;
-  border-radius: 3px;
-  transition: 0.2s;
-
-}
-
-.choose-file-button {
-  flex-shrink: 0;
-  background-color: rgba(255, 255, 255, 0.04);
-  border: 1px solid black;
-  border-radius: 3px;
-  padding: 8px 15px;
-  margin-right: 10px;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.file-message {
-  font-size: small;
-  font-weight: 300;
-  line-height: 1.4;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.file-input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-  opacity: 0;
-
-}
-
-</style>
-
 <script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      files: []
+    }
+  },
+
+  methods: {
+    handleFileUpload(event) {
+      this.files = event.target.files;
+    },
+    submitFiles() {
+      let formData = new FormData();
+      for (let i = 0; i < this.files.length; i++) {
+        let file = this.files[i];
+        formData.append(this.name, file);
+      }
+      axios.post('http://127.0.0.1:5000',
+          formData,
+          {
+            headers: {
+              'Content-Type': 'multipart/form-data'
+            }
+          }
+      ).then(function () {
+        console.log('SUCCESS!!');
+      })
+          .catch(function () {
+            console.log('FAILURE!!');
+          });
+    }
+  }
+}
 
 </script>
 
+
+<style scoped>
+
+</style>
 

@@ -6,6 +6,8 @@ import HowToUse from './views/HowToUse.vue'
 import Contribute from './views/Contribute.vue'
 import "bootstrap/dist/css/bootstrap.css";
 
+
+
 const router = createRouter({
     history: createWebHistory(),
     routes: [
